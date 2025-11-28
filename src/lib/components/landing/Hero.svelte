@@ -8,7 +8,7 @@
 	<div class="hero-overlay"></div>
 	<div class="hero-content text-center text-neutral-content">
 		<div class="max-w-md">
-			<h1 class="mb-5 text-5xl font-bold">Work Smarter!</h1>
+			<h1 class="mb-5 text-5xl font-bold">Work Smarter!!!!</h1>
 			<p class="mb-5">
 				How many hours do you spend editing and creating content? Even a single Image meme could
 				take hours to create. Try Postify and save time!

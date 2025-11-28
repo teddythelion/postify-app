@@ -4,7 +4,7 @@ import { env } from '$env/dynamic/private';
 import type { RequestHandler } from './$types';
 
 export const POST: RequestHandler = async ({ request }) => {
-    const { prompt, duration = 5 } = await request.json();
+    const { prompt, duration = 5, aspectRatio = "16:9"} = await request.json();
     
     const key = JSON.parse(readFileSync(env.GOOGLE_APPLICATION_CREDENTIALS, 'utf8'));
     const auth = new GoogleAuth({ 
@@ -30,7 +30,7 @@ export const POST: RequestHandler = async ({ request }) => {
                 parameters: {
                     durationSeconds: duration,
                     sampleCount: 1,
-                    aspectRatio: "9:16",
+                    aspectRatio: "16:9",
                     storageUri: "gs://project_app_bucket/videos/"  // Changed to include /videos/
                 }
             })

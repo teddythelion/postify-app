@@ -1,9 +1,10 @@
 <script lang="ts">
 	import { Chat } from '@ai-sdk/svelte';
-
+	import MyModalTextToVideo from './ModalTextToVideo.svelte';
 	import myImage from '$lib/assets/my-image.png';
 	import hisImage from '$lib/assets/his-image.png';
 	export let modalRef: HTMLDialogElement | undefined;
+	let my_modal2: HTMLDialogElement | undefined;
 	let inputUser = '';
 	let uBubble = '';
 	const chat = new Chat({});
@@ -30,15 +31,16 @@
 		<div class="flex flex-col gap-4 py-4 pb-20 lg:flex-row lg:gap-0">
 			<!-- Removed mr-10, added w-full on mobile -->
 			<div class="card w-full bg-info text-primary-content lg:mr-10 lg:w-96">
+				<MyModalTextToVideo bind:modalRef2={my_modal2} />
 				<!-- for image creation event -->
 				<div class="card-body">
-					<h2 class="card-title">Card title!</h2>
+					<h2 class="card-title">Text To Video</h2>
 					<p>
-						A card component has a figure, a body part, and inside body there are title and actions
-						parts
+						Use a prompt to explain what you want adding camera angle specifications lighting and
+						mood to get better results.
 					</p>
 					<div class="card-actions justify-end">
-						<button class="btn">Buy Now</button>
+						<button class="btn" on:click={() => my_modal2?.showModal()}>Start Here</button>
 					</div>
 				</div>
 			</div>
