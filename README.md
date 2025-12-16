@@ -1,38 +1,34 @@
-# sv
+# 🏭 Content Factory
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A professional AI-powered media creation suite built with **SvelteKit**. This application bridges the gap between high-level creative prompts and complex production tasks, integrating **Google Vertex AI (Veo)**, **OpenAI (DALL-E 3)**, and **Three.js** for a complete "text-to-media" workflow.
 
-## Creating a project
+## 🚀 Key Features
 
-If you're seeing this, you've probably already done this step. Congrats!
+* **AI Creative Assistant**: A chat interface driven by the Vercel AI SDK to help brainstorm and refine prompts.
+* **Video Generation (Veo)**: Produce 4-8 second high-fidelity videos from text or reference images using Google's Veo 2.0 and 3.1 models.
+* **Image Studio**: Generate 1024x1024 DALL-E 3 images with deep Zod-based prompt validation.
+* **3D Enhancement**: An interactive Three.js workspace for adding particle systems, 3D typography (Troika), and cinematic effects to generated media.
+* **Server-Side Media Processing**: Advanced FFmpeg integration for applying filters (sepia, blur, pixelate) and re-encoding video for optimal playback.
 
-```sh
-# create a new project in the current directory
-npx sv create
+## 📂 Project Structure
 
-# create a new project in my-app
-npx sv create my-app
-```
+The project follows a standard SvelteKit directory structure, separating UI, server-side logic, and reactive state.
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```text
+src/
+├── app.html                # Main HTML entry point (Dracula theme)
+├── routes/                 # 📂 ROUTING SYSTEM
+│   ├── +layout.svelte      # Shared UI (Sidebar, Footer, Global Styles)
+│   ├── +page.svelte        # HOME: AI Chat Creative Assistant
+│   ├── texttoimage/        # 🖼️ Text-to-Image (DALL-E 3)
+│   ├── texttovideo/        # 🎬 Text-to-Video (Veo 2.0/3.1)
+│   ├── imageedit/          # 🎨 3D Enhancement & Image Modification
+│   └── api/                # 🤖 SERVER ENDPOINTS
+│       ├── imageGen/       # OpenAI integration
+│       ├── processVideo/   # WASM-based video filtering
+│       ├── proxyVideo/     # CORS-bypass for media streaming
+│       └── veo2-simple/    # Vertex AI generation & polling suite
+└── lib/                    # 🛠️ INTERNAL LIBRARY ($lib)
+    ├── stores/             # Global Svelte Stores (3D, Video, Text)
+    ├── utils/              # Memory-safe storage & Canvas-to-Video capture
+    └── types/              # Troika 3D Text type definitions
