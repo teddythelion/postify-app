@@ -47,6 +47,7 @@
 	"dependencies": {
 		"@ai-sdk/google": "^2.0.40",
 		"@ai-sdk/google-vertex": "^3.0.74",
+		"@anthropic-ai/sdk": "^0.71.2",
 		"@ffmpeg-installer/ffmpeg": "^1.1.0",
 		"@ffmpeg/ffmpeg": "^0.12.15",
 		"@fortawesome/fontawesome-svg-core": "^7.1.0",
