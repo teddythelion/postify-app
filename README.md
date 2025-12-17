@@ -4,7 +4,7 @@ A professional AI-powered media creation suite built with **SvelteKit**. This ap
 
 ## 🚀 Key Features
 
-* **AI Creative Assistant**: A chat interface driven by the Vercel AI SDK to help brainstorm and refine prompts.
+* **AI Creative Assistant**: A chat interface driven by Anthropics AI and the Vercel AI SDK to help brainstorm and refine prompts.
 * **Video Generation (Veo)**: Produce 4-8 second high-fidelity videos from text or reference images using Google's Veo 2.0 and 3.1 models.
 * **Image Studio**: Generate 1024x1024 DALL-E 3 images with deep Zod-based prompt validation.
 * **3D Enhancement**: An interactive Three.js workspace for adding particle systems, 3D typography (Troika), and cinematic effects to generated media.
