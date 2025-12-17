@@ -1,6 +1,6 @@
 # 🏭 Content Factory
 
-A professional AI-powered media creation suite built with **SvelteKit**. This application bridges the gap between high-level creative prompts and complex production tasks, integrating **Google Vertex AI (Veo)**, **OpenAI (DALL-E 3)**, and **Three.js** for a complete "text-to-media" workflow.
+A professional AI-powered media creation suite built with **SvelteKit**. This application bridges the gap between high-level creative prompts and complex production tasks, integrating **Google Vertex AI (Veo)**, **OpenAI GPT Models, OpenAi (DALL-E 3)**,**Anthropic AI** and **Three.js** for a complete "text-to-media" workflow.
 
 ## 🚀 Key Features
 
