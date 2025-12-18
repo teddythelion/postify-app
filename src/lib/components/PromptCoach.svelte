@@ -296,7 +296,7 @@
 					on:keydown={handleKeyPress}
 					placeholder="What do you want to create?"
 					disabled={isLoading}
-					class="textarea-bordered textarea max-w-3/5 flex-1 resize-y bg-base-200 text-sm textarea-sm focus:outline-neutral disabled:opacity-50"
+					class="textarea-bordered textarea ml-22 max-w-3/5 flex-1 resize-y bg-base-200 text-sm textarea-sm focus:outline-neutral disabled:opacity-50"
 					rows="1"
 					style="min-height: 60px; max-height: 200px;"
 				></textarea>

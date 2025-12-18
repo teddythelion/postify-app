@@ -107,7 +107,7 @@
 				<!-- Text to Image -->
 				<li>
 					<a
-						href="/texttoimage"
+						href="/texttoimage/texttoimage-enhanced.svelte"
 						class="is-drawer-close:tooltip is-drawer-close:tooltip-right {$page.url.pathname ===
 						'/texttoimage'
 							? 'active'
